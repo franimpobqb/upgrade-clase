@@ -1,0 +1,82 @@
+.button-secondary {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #0077c4;
+}
+
+.modalUpgrade .modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.modalUpgrade .modal-header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalUpgrade h5 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modalUpgrade h5 span {
+    color: #0077c4;
+}
+
+.modalUpgrade thead th {
+    font-size: 1.5rem;
+}
+
+.modalUpgrade .table th,
+.modalUpgrade .modal-footer {
+    border-top: none;
+}
+
+.modalUpgrade tbody th {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.modalUpgrade thead th,
+.modalUpgrade tbody td {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .modalUpgrade .modal-dialog {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 575px) {
+    .modalUpgrade .modal-footer {
+
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .modalUpgrade h5 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .modalUpgrade thead th {
+        font-size: 1.3rem;
+    }
+
+    .modalUpgrade tbody th {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
