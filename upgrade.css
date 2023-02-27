@@ -23,6 +23,11 @@
     justify-content: center;
 }
 
+.modalUpgrade .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .modalUpgrade h5 {
     font-size: 2.4rem;
     font-weight: 700;
@@ -47,22 +52,62 @@
     font-size: 1.5rem;
 }
 
+.modalUpgrade .table th {
+    line-height: 1;
+    vertical-align: middle;
+}
+
 .modalUpgrade thead th,
 .modalUpgrade tbody td {
     text-align: center;
+    vertical-align: middle;
+}
+
+.modalUpgrade .upgrade-price td span {
+    font-size: 1.5rem;
+}
+
+
+.modalUpgrade .table td {
+    border-top: none;
+}
+
+.modalUpgrade table tbody tr th:first-child,
+.modalUpgrade table tbody tr td:last-child {
+    padding-left: 2.5rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F6F6F6;
+}
+
+.modalUpgrade .table .aclaracion {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(123, 123, 123);
 }
 
 @media (min-width: 576px) {
     .modalUpgrade .modal-dialog {
-        max-width: 550px;
+        max-width: 600px;
+    }
+    br.mobile {
+        display: none;
     }
 }
 
 @media (max-width: 575px) {
+
+    br.desktop {
+        display: none;
+    }
+
+   
+
     .modalUpgrade .modal-footer {
 
-        gap: 1.5rem;
-        padding-bottom: 2rem;
+        gap: 2.5rem;
+        padding-bottom: 3rem;
     }
 
     .modalUpgrade h5 {
@@ -78,5 +123,10 @@
     .modalUpgrade tbody th {
         font-weight: 600;
         font-size: 1.3rem;
+    }
+
+    .modalUpgrade table tbody tr th:first-child,
+    .modalUpgrade table tbody tr td:last-child {
+        padding-left: 1rem;
     }
 }
